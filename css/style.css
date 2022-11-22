@@ -206,15 +206,20 @@ ol > li:before {
 
 @media (pointer:fine) {
 .content-download > .links > .link-start {
+	font: normal normal 600 13px/31px Muli;
 	width: 100%;
 	border-radius: 15px;
-	max-width: 350px;
+	max-width: 200px;
 	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--green);
-	color: var(--dark);
+	border: 2px solid transparent;
+	background: linear-gradient(90deg,#4D57F5 0%, #4DF1AA 100%) border-box;
+	color: var(--white);
+	background: #07101A 0% 0% no-repeat padding-box;
+	border: 2px solid transparent;
+	border-image: linear-gradient(90deg, #4D57F5 0%, #4DF1AA 100%) 2;
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -618,9 +623,6 @@ html.open-menu .menu {
 	flex-wrap: wrap;
 	gap: 10px;
 }
-.content-download .links, .start-now .free {
-	display: none;
-}
 .content-download .links .link {
 	flex: 0 0 auto;
 	width: 40px;
@@ -690,9 +692,6 @@ html.open-menu .menu {
 @media (pointer:fine) {
 .content-download .btn {
 	display: inline-block;
-}
-.content-download .links {
-	display: none;
 }
 }
 .soc {
@@ -1113,6 +1112,9 @@ html.open-menu .menu {
 	backface-visibility: hidden;
 	will-change: transform, opacity;
 	transform-origin: 50% 100%;
+	background: #091723;
+	border: 2px solid #FFFFFF12;
+	border-radius: 20px;
 }
 .join .card:nth-child(1), .join .card:nth-child(2), .join .card:nth-child(3) {
 	display: block;
@@ -1122,13 +1124,14 @@ html.open-menu .menu {
 	align-items: center;
 	margin: 0 0 15px 0;
 	gap: 7px;
+	padding: 7px 30px;
 }
 .join .card .ava {
 	flex: 0 0 auto;
-	background: var(--bg-light);
+	background: var(--white);
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
+	border-radius: 10px;
 	margin: 0 3px 0 0;
 }
 .join .card .ava img {
@@ -1182,17 +1185,13 @@ html.open-menu .menu {
 }
 .join .card .b {
 	display: block!important;
-	text-align: right;
+	text-align: left;
 	position: relative;
-	border-radius: 20px!important;
-	height: 97px;
-	padding: 25px 15px;
-	font-weight: 500;
-	font-size: 13px;
-	line-height: 16px;
-	color: var(--grey);
-	background: var(--bg-light) url(../img/card-lines.svg) no-repeat 25px 50%;
-	background-size: auto 87px;
+	padding: 25px 30px;
+	font-weight: 800;
+	font-size: 21px;
+	line-height: 32px;
+	color: #4C56F5;
 }
 .join .card .b img {
 	position: absolute;
@@ -1224,11 +1223,16 @@ html.open-menu .menu {
 .faq .el {
 	margin: 0 auto;
 	max-width: 1000px;
-	color: var(--grey);
+	color: #68BBBF;
 	transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	background-color: #091723;
+	border-radius: 20px;
+	padding: 10px 20px;
 }
 .faq .el.open {
 	color: var(--white);
+	background-color: #091723;
+	outline: 2px solid #FFFFFF12;
 }
 .faq .el:not(:last-child) {
 	margin-bottom: 20px;
@@ -1243,7 +1247,7 @@ html.open-menu .menu {
 }
 .faq .qu {
 	cursor: pointer;
-	padding: 10px 0 10px 60px;
+	padding: 10px 20px;
 	font-weight: bold;
 	line-height: 1.4;
 	position: relative;
@@ -1258,10 +1262,10 @@ html.open-menu .menu {
 .faq .qu .arr {
 	position: absolute;
 	top: 35px;
-	left: 0;
+	right: 0;
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
+	border-radius: 10px;
 	margin: -20px 0;
 	background: var(--bg-light);
 	transition-property: background, transform;
@@ -1765,14 +1769,8 @@ html.open-menu .menu {
 }
 
 @media (pointer:fine) {
-*, *:before, *:after {
-	cursor: none!important;
-}
 a, a *, button, button *, input, .js_hover, .js_hover * {
 	cursor: pointer!important;
-}
-.js_hoverVideo, .js_hoverVideo * {
-	cursor: none!important;
 }
 .custom-cursor {
 	display: block!important;
@@ -2009,4 +2007,18 @@ iframe[data-intercom-frame="true"] {
 .container-new__bottom-part > div {
 	margin-bottom: 30px;
 	font-size: 14px !important;
+}
+
+.slogan {
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	max-width: 685px;
+	padding: 20px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #FFFFFF08;
+	border-radius: 10px;
 }

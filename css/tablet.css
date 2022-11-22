@@ -296,11 +296,9 @@ html.open-menu .menu-links {
 	padding-bottom: 230px;
 }
 .screens-text .top-text {
-	padding-bottom: 0;
-	font-size: 30px;
-	float: right;
 	max-width: 580px;
-	text-align: left;
+	text-align: center;
+	margin: 0 auto;
 }
 .screens-text .wrap {
 	clear: both;
@@ -409,7 +407,8 @@ html.open-menu .menu-links {
 	font-size: 1.25em;
 }
 .faq .ind {
-	padding-left: 60px;
+	padding-left: 20px;
+	padding-right: 60px;
 }
 .support {
 	padding-top: 125px;
