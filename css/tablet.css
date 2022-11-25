@@ -8,17 +8,17 @@ body {
 	height: 81px;
 	gap: 20px;
 }
-.head-download {
+.head-login {
 	display: none;
 }
-.head-download .btn {
+.head-login .btn {
 	line-height: 16px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	border-radius: 25px;
 	display: none;
 }
-.head-download .links {
+.head-login .links {
 	display: flex;
 }
 .menu-inner {
@@ -132,7 +132,7 @@ html.open-menu .menu-links {
 		margin: 0 0 30px 0;
 		transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
-.menu .head-download {
+.menu .head-login {
 	display: block;
 	flex: 0 0 auto;
 	order: 2;
@@ -230,14 +230,14 @@ html.open-menu .menu-links {
 .footer .container {
 	align-items: center;
 }
-.content-download .btn {
+.content-social .btn {
 	display: none;
 }
 
-.content-download .link-start {
+.content-social .link-start {
 	display: none;
 }
-.content-download .links {
+.content-social .links {
 	display: flex;
 }
 .start-now .free {
@@ -289,11 +289,11 @@ html.open-menu .menu-links {
 .simple-text {
 	padding-top: 125px;
 	padding-bottom: 250px;
-	min-height: 100vh;
 	font-size: 110px;
 }
 .screens-text {
-	padding-bottom: 230px;
+	padding-bottom: 150px;
+	padding-top: 150px;
 }
 .screens-text .top-text {
 	max-width: 580px;
@@ -302,10 +302,11 @@ html.open-menu .menu-links {
 }
 .screens-text .wrap {
 	clear: both;
-	padding-top: 209px;
+	padding-top: 10px;
 	font-size: 56px;
 	padding-bottom: 0;
 	gap: 90px;
+	transform: perspective(425px) rotateY(-25deg);
 }
 .screens-text .tel {
 	width: 270px;
@@ -367,7 +368,7 @@ html.open-menu .menu-links {
 	border-right-width: 85px;
 }
 .join .card {
-	width: 335px;
+	width: 368px;
 	max-width: none;
 	margin: 0!important;
 	display: block!important;
@@ -569,7 +570,7 @@ html.open-menu .menu-links {
 		text-align: right;
 		margin: 0;
 	}
-	.container-new__top-part_right .content-download {
+	.container-new__top-part_right .content-social {
 		margin-left: 40px;
 	}
 
@@ -584,7 +585,7 @@ html.open-menu .menu-links {
 		align-items: flex-end;
 	}
 
-	.container-new .content-download .links {
+	.container-new .content-social .links {
 		margin-bottom: 0;
 		flex-wrap: wrap;
 		width: 35vw;
@@ -625,4 +626,92 @@ html.open-menu .menu-links {
 		margin: 0 0 30px 0;
 		transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
+
+	.instruments-realtime .top {
+		padding-top: 80px;
+		padding-bottom: 44px;
+	}
+	.instruments-realtime .top-text {
+		text-align: center;
+		margin: 0 auto 30px auto;
+		font-size: 20px;
+	}
+	.instruments-realtime .top-text br {
+		display: block;
+		height: auto;
+		line-height: 0;
+		overflow: hidden;
+	}
+	.instruments-realtime .size1 {
+		font-size: 64px;
+		line-height: 1;
+		margin-bottom: 64px;
+	}
+	.instruments-realtime .size2 {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.instruments-realtime .cards {
+		margin: 0 auto;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 20px;
+		flex: 0 0 auto;
+		position: relative;
+	}
+	.instruments-realtime .cards:before, .instruments-realtime .cards:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: 2;
+		width: 235px;
+		margin: -1px 0;
+		border-style: solid;
+		border-width: 0;
+		border-color: #011119;
+	}
+	.instruments-realtime .cards:before {
+		background: linear-gradient(to right, #07101A 0%, rgba(1, 17, 25, 0) 100%);
+		left: 0;
+		border-left-width: 85px;
+	}
+	.instruments-realtime .cards:after {
+		background: linear-gradient(to right, rgba(1, 17, 25, 0) 0%, #07101A 100%);
+		right: 0;
+		border-right-width: 85px;
+	}
+	.instruments-realtime .card {
+		width: 340px;
+		max-width: none;
+		margin: 0!important;
+		display: block!important;
+		transform: none!important;
+		opacity: 1!important;
+		order: 3;
+	}
+	.instruments-realtime .card-my {
+		order: 2;
+	}
+	.instruments-realtime .card-my + .card {
+		order: 1;
+	}
+	.instruments-realtime .download {
+		padding-top: 90px;
+	}
+
+
+	.share-text .detail-info .card {
+		flex-direction: unset;
+	}
+
 }
+@media (max-width: 1280px) and (min-width: 768px) {
+	.menu-inner {
+		flex-direction: row-reverse;
+	}
+}
+
+
+

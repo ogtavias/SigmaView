@@ -16,6 +16,31 @@ body {
 	top: 0px;
 }
 
+.share-text{
+	position: relative;
+	z-index:1;
+	overflow:hidden;
+
+}
+
+.share-text:before{
+	z-index:-1;
+	position:absolute;
+	left:0;
+	top:0;
+	content: url(../img/bg-grad-2.png);
+	opacity:0.1;
+}
+
+/*.faq:before{
+	z-index:-1;
+	position:absolute;
+	right:0;
+	top:0;
+	content: url(../img/bg-grad-3.png);
+	opacity:0.01;
+}*/
+
 .footer .container {
 	display: flex;
 	flex-direction: row-reverse;
@@ -121,18 +146,9 @@ body {
 	justify-content: flex-start;
 }
 
-.content-download .link-start {
+.content-social .link-start {
 	max-width: 320px;
 	height: 60px;
-}
-.top-block .top-block-shadow {
-	position: absolute;
-	width: 772px;
-	height: 772px;
-	top: 50%;
-	right: 0;
-	margin: -386px 0;
-	filter: blur(300px);
 }
 .top-block .image {
 	width: 1325px;
@@ -156,7 +172,7 @@ body {
 
 
 .share-text {
-	margin-top: -300px;
+	margin-top: -100px;
 }
 .share-text .top {
 	padding-top: 180px;
@@ -173,22 +189,14 @@ body {
 	gap: 20px;
 	margin: 0;
 }
-.watch-btn {
-	position: absolute;
-	left: 45%;
-	top: 45%;
-	z-index: 1;
-	transform: translate(-50%, -50%) rotate(8.63deg);
-	pointer-events: none;
-	display: block;
-}
 .share-text ul:before {
+	border-radius: 5px;
 	top: -5px;
 	left: 0;
 	width: 100%;
 	height: 5px;
 	transform-origin: 0 50%;
-	background: linear-gradient(to right, #ffcfc3 0%, #fee1fe 33%, #fff 67%, #fef7e3 100%);
+	background: linear-gradient(to right, #4C56F5 0%, #fee1fe 33%, #4CD0F5 67%, #4DF1AA  100%);
  transform: scale(calc(1 * var(--percent)), 1);
 }
 .share-text li {
@@ -354,7 +362,7 @@ body {
 	.mobile-only {
 		display: none !important;
 	}
-	.container-new .content-download .links {
+	.container-new .content-social .links {
 		margin-bottom: 0;
 		flex-wrap: nowrap;
 		width: 100%;
@@ -385,9 +393,9 @@ body {
 	}
 	.menu-links .link {
 		flex: 0 0 auto;
-		padding: 12px 6px;
-		font-weight: 500;
-		font-size: 14px;
+		padding: 12px 10px;
+		font-weight: 600;
+		font-size: 13px;
 		line-height: 16px;
 		border-radius: 10px;
 		margin: 0!important;
@@ -398,4 +406,43 @@ body {
 	.toggle-menu {
 		display: none;
 	}
+
+
+	.screens-text .top .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+
+
+	.screens-text .image {
+		width: 1325px;
+		height: 884px;
+		position: absolute;
+		top: 50%;
+		left: 380px;
+		margin: 0;
+		transform: translate(0, -33%);
+	}
+	.screens-text .additional-image{
+		text-align: left;
+		margin: 0;
+		width: 530px;
+		max-width: none;
+		flex: 0 0 auto;
+		z-index: 10;
+	}
+
+	.screens-text .top {
+		top: 0;
+		height: 1200px;
+		padding-top: 222px;
+		padding-bottom: 200px;
+		justify-content: flex-start;
+	}
+	.screens-text .additional-image {
+		left: 16%;
+	}
+
 }
