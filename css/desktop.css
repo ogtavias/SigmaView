@@ -210,7 +210,8 @@ body {
 	gap: 80px;
 	flex-direction: row;
 	align-items: center;
-	text-align: right;
+	text-align: center;
+	margin: 0 auto;
 }
 .screens-text .wrap:nth-last-child(even) {
 	flex-direction: row-reverse;
@@ -420,7 +421,7 @@ body {
 		width: 1325px;
 		height: 884px;
 		position: absolute;
-		top: 50%;
+		top: 75%;
 		left: 380px;
 		margin: 0;
 		transform: translate(0, -33%);
@@ -436,13 +437,14 @@ body {
 
 	.screens-text .top {
 		top: 0;
-		height: 1200px;
-		padding-top: 222px;
+		height: 1160px;
+		padding-top: 150px;
 		padding-bottom: 200px;
 		justify-content: flex-start;
 	}
 	.screens-text .additional-image {
 		left: 16%;
+		top:30%;
 	}
 
 }

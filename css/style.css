@@ -194,6 +194,11 @@ ol > li:before {
 		color: #fff;
 		border: solid 2px transparent;
 		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+		background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+		background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+		background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+		background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+
 		background-origin: border-box;
 		background-clip: content-box, border-box;
 		box-shadow: 2px 1000px 1px #07101A inset;
@@ -810,8 +815,8 @@ html.open-menu .menu {
 	position: relative;
 	left: 50%;
 	transform: translate3d(-46.25%, 0, 0);
-	width: 564px;
-	height: 376px;
+	width: 464px;
+	height: 309px;
 	pointer-events: none;
 	z-index: 10;
 }
@@ -832,8 +837,8 @@ html.open-menu .menu {
 	top: 50%;
 	left: 50%;
 	transform: translate3d(-50%, -50%, 0);
-	width: 564px;
-	height: 376px;
+	width: 464px;
+	height: 309px;
 	/*clip-path: path('M110.826 4.7951988 538.338 55.8499625 543.978 58.3885971 547.644 62.9017254 548.772 69.6714179 483.348 311.687922 480.246 317.893473 474.606 322.406602 468.402 324.381095 463.608 324.381095 126.9 269.941485 123.234 282.070518 120.132 286.301575 115.338 288.84021 112.236 289.404351 53.298 279.531883 49.35 277.83946 46.812 274.736684 46.248 269.941485 50.196 257.530383 27.072 254.145536 20.868 251.324831 17.484 245.965491 17.484 239.477869 91.65 14.6676669 95.88 9.02625656 102.366 4.7951988z');*/
 
 	pointer-events: all;
@@ -954,6 +959,9 @@ html.open-menu .menu {
 	padding: 0;
 	flex: 0 0 auto;
 	width: 100%;
+}
+.share-text li a{
+	color: transparent;
 }
 .share-text li .color {
 	position: absolute;

@@ -293,7 +293,7 @@ html.open-menu .menu-links {
 }
 .screens-text {
 	padding-bottom: 150px;
-	padding-top: 150px;
+	padding-top: 30px;
 }
 .screens-text .top-text {
 	max-width: 580px;
@@ -306,7 +306,7 @@ html.open-menu .menu-links {
 	font-size: 56px;
 	padding-bottom: 0;
 	gap: 90px;
-	transform: perspective(425px) rotateY(-25deg);
+	transform: perspective(425px) rotateY(-25deg)rotateX(13deg)rotateZ(-7deg);
 }
 .screens-text .tel {
 	width: 270px;
