@@ -182,40 +182,42 @@ ol > li:before {
 	color: var(--white);
 	background: var(--bg-light);
 }
+.links-started{
+	font: normal normal 700 13px/31px Muli;
+	max-width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	padding: 1rem;
+	padding: .5rem 3rem;
+	color: #fff;
+	border: solid 2px transparent;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+	background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+	background: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */
 
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px #07101A inset;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.links-started:hover {
+	box-shadow: none;
+	color: white;
+}
+
+.link-start {
+	max-width: 200px;
+	height: 50px;
+}
 @media (pointer:fine) {
-	.links-started{
-		font: normal normal 700 13px/31px Muli;
-		max-width: 200px;
-		height: 50px;
-		border-radius: 10px;
-		padding: 1rem;
-		padding: .5rem 3rem;
-		color: #fff;
-		border: solid 2px transparent;
-		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
-		background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
-		background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
-		background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
-		background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #434ADB, #3CC285);
 
-		background-origin: border-box;
-		background-clip: content-box, border-box;
-		box-shadow: 2px 1000px 1px #07101A inset;
-		text-align: center;
-		margin: 0 auto;
-		cursor: pointer;
-	}
-
-	.links-started:hover {
-		box-shadow: none;
-		color: white;
-	}
-
-	.link-start {
-		max-width: 200px;
-		height: 50px;
-	}
 
 .content-download > .links > .link-start {
 	font: normal normal 600 13px/31px Muli;
@@ -2085,7 +2087,7 @@ iframe[data-intercom-frame="true"] {
 
 .slogan {
 	font-weight: bold;
-	line-height: 1;
+	line-height: 1.4;
 	margin: 0 auto;
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -2195,6 +2197,7 @@ iframe[data-intercom-frame="true"] {
 	gap: 20px;
 	flex: 0 0 auto;
 	width: 100%;
+
 }
 .instruments-realtime .card {
 	flex: 0 0 auto;
